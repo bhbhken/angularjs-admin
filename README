@@ -1,10 +1,22 @@
-## Setup
+Clone repository and install dependencies
+You will need to clone the source code of angular2-material-admin GitHub repository:
 
-* Ensure you have Node 4.4+ and NPM 3+ installed.
-* Install Angular CLI `npm i -g angular-cli@latest`
-* Install Typescript `npm i -g typescript`
-* Install TSLint `npm install -g tslint`
-* Install Protractor for e2e testing `npm install -g protractor`
-* Install Node packages `npm i`
-* Update Webdriver `webdriver-manager update` and `./node_modules/.bin/webdriver-manager update`
-* Run local build `ng serve`
+git clone https://github.com/bhbhken/angular2-material-admin.git
+After the repository is cloned, go inside of the repository directory and install dependencies:
+
+cd angular2-material-admin
+npm install
+This will setup a working copy of ng2-admin on your local machine.
+
+Running local copy
+To run a local copy in development mode, execute:
+
+npm start
+Go to http://0.0.0.0:3000 or http://localhost:3000 in your browser.
+
+To run the local copy in production mode and build the sources, execute:
+
+npm run prebuild:prod && npm run build:prod && npm run server:prod
+This will clear up your dist folder (where release files are located), generate a release build and start the built-in server. Now you can copy the sources from the dist folder and use it with any backend framework or simply put it under a web server.
+
+For addition information about creating a build, please check out Angular2 Webpack Starter documentation
